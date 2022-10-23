@@ -129,9 +129,26 @@ window.clickImage = (id) => {
 };
 
 window.removeGlasses = (isValid) => {
+  // btnBefore(isValid);
+  // btnAfter(isValid);
   if (isValid) {
+    document.querySelector("#glassesInfo").style.display = "block";
     document.querySelector("#avatar img").style.opacity = 0.8;
-  } else {
-    document.querySelector("#avatar img").style.opacity = 0;
   }
+  document.querySelector("#glassesInfo").style.display = "none";
+  document.querySelector("#avatar img").style.opacity = 0;
 };
+
+// let btnBefore = (isValid) => {
+//   if (isValid) {
+//     document.querySelector("#glassesInfo").style.display = "none";
+//     document.querySelector("#avatar img").style.opacity = 0;
+//   }
+// };
+
+// let btnAfter = (isValid) => {
+//   if (isValid === false) {
+//     document.querySelector("#glassesInfo").style.display = "block";
+//     document.querySelector("#avatar img").style.opacity = 0.8;
+//   }
+// };

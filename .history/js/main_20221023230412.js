@@ -129,9 +129,22 @@ window.clickImage = (id) => {
 };
 
 window.removeGlasses = (isValid) => {
+  // btnBefore(isValid);
+  // btnAfter(isValid);
   if (isValid) {
     document.querySelector("#avatar img").style.opacity = 0.8;
   } else {
+  }
+};
+
+let btnBefore = (isValid) => {
+  if (isValid === false) {
     document.querySelector("#avatar img").style.opacity = 0;
+  }
+};
+
+let btnAfter = (isValid) => {
+  if (isValid) {
+    document.querySelector("#avatar img").style.opacity = 0.8;
   }
 };
